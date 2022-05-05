@@ -1150,7 +1150,6 @@
 }
  .hov-in a{
      display: table-cell;
-     horizontal-align: middle;
      vertical-align: middle;
      height: 100%;
 }
