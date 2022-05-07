@@ -1434,6 +1434,7 @@
 }
  .footer-link-contact ul li p a{
      color: #cccccc;
+     font-size: 16px;
 }
  .footer-link-contact ul li p a:hover{
      color: #d33b33;
