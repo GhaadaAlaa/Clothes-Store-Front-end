@@ -1315,7 +1315,7 @@
      padding-bottom: 20px;
 }
  .footer-widget ul{
-     display: inline-block;
+     display: inline-block !important;
 }
  .footer-widget ul li {
      float: left;
@@ -1348,7 +1348,7 @@
  .footer-link h4::before {
      border-bottom: 3px solid #d33b33;
      content: "";
-     height: 3px;
+     height: 100%;
      width: 100%;
      position: absolute;
      bottom: 3px;
