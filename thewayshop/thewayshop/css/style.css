@@ -1356,6 +1356,8 @@
 }
  .footer-link ul li {
      margin-right: 5px;
+     margin-top: 10px;
+     text-align: center;
 }
  .footer-link ul li a {
      color: #ffffff;
