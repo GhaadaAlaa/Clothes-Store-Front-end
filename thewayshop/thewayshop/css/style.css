@@ -213,7 +213,7 @@
      border-radius: 0px;
 }
  .right-phone-box{
-     float: right;
+   float:inline-start;
      margin-left: 10px;
 }
  .right-phone-box p{
@@ -243,7 +243,7 @@
      font-size: 20px;
 }
  .our-link{
-     float: right;
+     float: left;
 }
  .our-link ul li{
      display: inline-block;
@@ -584,7 +584,7 @@
 }
  .hvr-hover{
      display: inline-block;
-     vertical-align: middle;
+     vertical-align: middle ;
      -webkit-transform: perspective(1px) translateZ(0);
      transform: perspective(1px) translateZ(0);
      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -683,6 +683,7 @@
 /*------------------------------------------------------------------ Slider -------------------------------------------------------------------*/
  .cover-slides{
      height: 100vh;
+
 }
  .slides-navigation a {
      background: #d33b33;
@@ -705,6 +706,7 @@
 }
  .cover-slides .container{
      height: 100%;
+
      position: relative;
      z-index: 2;
 }
@@ -712,9 +714,11 @@
      -webkit-box-align: center;
      -ms-flex-align: center;
      align-items: center;
+
 }
  .cover-slides .container > .row {
      height: 100%;
+
 }
  .overlay-background {
      background: #333;
@@ -942,66 +946,7 @@
      -ms-animation: bounceY 0.9s linear;
      animation: bounceY 0.9s linear;
 }
- @keyframes bounceY {
-     0% {
-         transform: translateY(-205px);
-    }
-     40% {
-         transform: translateY(-100px);
-    }
-     65% {
-         transform: translateY(-52px);
-    }
-     82% {
-         transform: translateY(-25px);
-    }
-     92% {
-         transform: translateY(-12px);
-    }
-     55%, 75%, 87%, 97%, 100% {
-         transform: translateY(0px);
-    }
-}
- @-moz-keyframes bounceY {
-     0% {
-         -moz-transform: translateY(-205px);
-    }
-     40% {
-         -moz-transform: translateY(-100px);
-    }
-     65% {
-         -moz-transform: translateY(-52px);
-    }
-     82% {
-         -moz-transform: translateY(-25px);
-    }
-     92% {
-         -moz-transform: translateY(-12px);
-    }
-     55%, 75%, 87%, 97%, 100% {
-         -moz-transform: translateY(0px);
-    }
-}
- @-webkit-keyframes bounceY {
-     0% {
-         -webkit-transform: translateY(-205px);
-    }
-     40% {
-         -webkit-transform: translateY(-100px);
-    }
-     65% {
-         -webkit-transform: translateY(-52px);
-    }
-     82% {
-         -webkit-transform: translateY(-25px);
-    }
-     92% {
-         -webkit-transform: translateY(-12px);
-    }
-     55%, 75%, 87%, 97%, 100% {
-         -webkit-transform: translateY(0px);
-    }
-}
+
 /*------------------------------------------------------------------ Blog -------------------------------------------------------------------*/
  .latest-blog{
      padding: 70px 0px;
@@ -1196,7 +1141,7 @@
      padding-bottom: 20px;
 }
  .footer-widget ul{
-     display: inline-block;
+     display: inline-block !important;
 }
  .footer-widget ul li {
      float: left;
@@ -1227,16 +1172,20 @@
      font-weight: 700;
 }
  .footer-link h4::before {
+
      border-bottom: 3px solid #d33b33;
      content: "";
-     height: 3px;
+     height: 100%;
      width: 100%;
      position: absolute;
      bottom: 3px;
      left: 0px;
 }
  .footer-link ul li {
-     margin-right: 5px;
+   text-align: center;
+    margin-right: 5px;
+    margin-top: 10px;
+
 }
  .footer-link ul li a {
      color: #ffffff;
@@ -1284,7 +1233,6 @@
  .footer-link-contact h4::before {
      border-bottom: 3px solid #d33b33;
      content: "";
-     height: 3px;
      width: 100%;
      position: absolute;
      bottom: 3px;
@@ -1292,14 +1240,17 @@
 }
  .footer-link-contact ul li{
      margin-bottom: 12px;
+
 }
  .footer-link-contact ul li i{
      position: absolute;
+
      left: 0;
      top: 5px;
      padding-right: 6px;
 }
  .footer-link-contact ul li p{
+
      padding-left: 25px;
      color: #cccccc;
      position: relative;
@@ -1313,9 +1264,11 @@
 }
  .footer-link-contact ul li p a{
      color: #cccccc;
+     font-size: 16px;
 }
  .footer-link-contact ul li p a:hover{
      color: #d33b33;
+
 }
 /*------------------------------------------------------------------ Copyright -------------------------------------------------------------------*/
  .footer-copyright{
@@ -2394,4 +2347,12 @@
  .table-responsive .table td, .table-responsive .table th {
      vertical-align: middle;
      white-space: nowrap;
+}
+.pictures{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:100% !important ;
+text-align: center !important;
+
 }
